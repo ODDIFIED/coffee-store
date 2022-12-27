@@ -1,3 +1,4 @@
+
 import Navbar from "./Navbar";
 import { Banner, Content } from "./styles";
 
