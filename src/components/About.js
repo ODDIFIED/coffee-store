@@ -1,4 +1,4 @@
-import pic from "../images/Rectangle 6.svg";
+import pic from "../images/ImageFive.svg";
 import { AboutHeader, ConHolder } from "./styles";
 
 const About = () => {

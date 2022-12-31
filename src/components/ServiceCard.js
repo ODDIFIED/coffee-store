@@ -1,22 +1,18 @@
 import { CoffeeCon, CoffeeImgCon, ItemContainer } from "./styles";
 
-
-
-
-const CoffeeCard = ({ coffee }) => {
+const ServiceCard = ({ holder }) => {
   return (
     <CoffeeCon>
       <CoffeeImgCon>
-        <img src={ coffee.Img } alt="first" />
+        <img src={holder.Img} alt="first" />
       </CoffeeImgCon>
       <ItemContainer>
         <div className="coffee-cart">
-          <h5>{coffee.coffee_name}</h5>
-          <button>Add to cart</button>
+          <h5>{holder.coffee_name}</h5>
         </div>
-        <p>${coffee.price}</p>
+          <p className="pp">{holder.coffee_des}</p>
       </ItemContainer>
     </CoffeeCon>
   );
 };
-export default CoffeeCard;
+export default ServiceCard;

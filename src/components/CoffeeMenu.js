@@ -1,16 +1,17 @@
-import { CoffeeDetails } from "../Data";
-import { ItemContainer } from "./styles"
+import { CoffeeHolder } from "./styles";
+import { CoffeeDetails } from "../Data.js";
+import CoffeeCard from "./CoffeeCard";
+
 const CoffeeMenu = () => {
   return (
-    <CoffeeMenu>
-      <h4>Our Menu</h4>
-
-      <ItemContainer>
-        {CoffeeDetails.map((holder) => {
-          return <CoffeeDetails holder={holder.price} />;
+    <CoffeeHolder>
+      <h4>OUR MENU</h4>
+      <div className="item-grid">
+        {CoffeeDetails.map((coffee) => {
+          return <CoffeeCard coffee={coffee} />;
         })}
-      </ItemContainer>
-    </CoffeeMenu>
+      </div>
+    </CoffeeHolder>
   );
 };
 export default CoffeeMenu;
