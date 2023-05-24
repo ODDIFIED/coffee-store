@@ -13,56 +13,62 @@ export const CoffeeDetails = [
     {
       id: 1,
       coffee_name : "Americano Coffee",
-      price: 50,
-      Img: ImageOne 
+      price: 29.99,
+      Img: ImageOne ,
+      
     },
     {
       id: 2,
       coffee_name : "Cappuccino Coffee",
-      price: 50,
-      Img: ImageTwo
+      price: 40.99,
+      Img: ImageTwo,
+      
     },
     {
       id: 3,
       coffee_name : "Macchiato Coffee",
-      price: 50,
-      Img: ImageThree
+      price: 14.99,
+      Img: ImageThree,
+     
     },
     {
       id: 4,
       coffee_name : "Mocha Coffee",
-      price: 50,
-      Img: ImageFour
+      price: 29.99,
+      Img: ImageFour,
+      
     },
     {
       id: 5,
       coffee_name : "Latte Coffee",
-      price: 50,
+      price: 14.99,
       Img: ImageFive
     },
     {
       id: 6,
       coffee_name : "Glacier Coffee",
-      price: 50,
+      price: 14.99,
       Img: ImageSix
     },
     {
       id: 7,
       coffee_name : "Black Coffee",
-      price: 50,
-      Img: ImageSeven
+      price: 9.99,
+      Img: ImageSeven,
     },
     {
       id: 8,
       coffee_name : "Instant Coffee",
-      price: 50,
-      Img: ImageEight
+      price: 10.99,
+      Img: ImageEight,
+
     },
     {
       id: 9,
       coffee_name : "Espresso Coffee",
-      price: 50,
-      Img: ImageNine
+      price: 20.99,
+      Img: ImageNine,
+    
     },
   ]
   

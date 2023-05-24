@@ -2,6 +2,7 @@ import styled from "styled-components";
 // header styling
 export const Banner = styled.div`
   height: 80vh;
+ 
 `;
 
 export const Content = styled.div`
@@ -36,6 +37,11 @@ export const Content = styled.div`
     font-weight: 900;
     border: none;
   }
+  h5{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 60px;
+  }
 `;
 // navbar styling
 export const NavContainer = styled.div`
@@ -43,6 +49,24 @@ export const NavContainer = styled.div`
   padding: 20px;
   display: flex;
   justify-content: space-around;
+  
+  Link{
+    text-decoration: none;
+  }
+ 
+  span{
+    background: white;
+    border: 1px solid white;
+    padding-inline: 5px;
+    height: 30vh;
+    font-weight: 900;
+    font-size: 13px;
+    color: brown;
+    text-decoration: none;
+    border-radius: 100% ;
+    position: relative;
+    top: -20px;
+  }
 `;
 export const LogoContainer = styled.div`
   display: flex;
@@ -68,6 +92,8 @@ export const NavItems = styled.div`
     margin-left: 20px;
   }
 `;
+
+
 
 // About us styling
 export const AboutHeader = styled.div`
@@ -157,6 +183,7 @@ export const CoffeeImgCon = styled.div`
     height: 100%;
     object-fit: cover;
   }
+  
 `;
 export const ItemContainer = styled.div`
   background-color: gainsboro;
@@ -179,6 +206,7 @@ export const ItemContainer = styled.div`
     font-weight: 900;
     padding-inline: 13px;
     background: none;
+    cursor: pointer;
   }
   p {
     font-size: 20px;
@@ -208,23 +236,20 @@ export const ContactPage = styled.div`
 
   .item-holder {
     width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 15px;
+    display: grid ;
+    grid-template-columns: repeat(4, 1fr);
+    // align-items: center;
+    gap: 90px;
   }
 `;
 
 export const TactCard = styled.div`
-  widthg: 100%;
   margin-top: 50px;
-  padding: 20px;
-
+  
   .icon {
     font-size: 40px;
     width: 100%;
     margin: auto;
-
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -242,6 +267,109 @@ export const TactCard = styled.div`
     font-size: 14px;
     font-weight: 900;
     text-align: center;
-    color : gray ;
+    color: gray;
   }
 `;
+
+// Footer styling
+export const FooterHold = styled.div`
+  border: 1px solid brown;
+  background-color: rgb(81, 52, 20);
+  height: 90vh;
+  color: white;
+
+  .big-container{
+    width: 100%;
+    max-width: 900px;
+    margin: 140px auto;
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    // justify-content: space-between;
+  }
+  h5{
+    font-size : 15px ;
+    line-height: 30px ;
+  }
+  .footcon{
+    justify-content: space-evenly ;
+  }
+  .foot-text{
+    color: white;
+    width: 90% ;
+  }
+
+  .icon-folder{
+    display: flex ;
+    gap: 10px ;
+    margin-top: 5px ;
+  }
+  .right-holder{
+    width: 130% ;
+    margin-top: 130px ;
+  }
+`;
+
+// ProductCard styling
+
+export const ProductLeft = styled.div`
+  margin-top: -40px;
+
+  h1{
+    font-size: 30px;
+    border: none;
+    width: 100%;
+    text-align: left;
+  }
+  p{
+    font-weight: 900;
+    padding-bottom: 20px;
+    margin-top: -20px;
+
+  }
+  span{
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 3px 5px;
+
+  }
+  .price_tag{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  .price_tag > h2{
+    font-size: 18px;
+  }
+  .price_tag>button {
+    border: 1px solid black;
+    font-size: 12px;
+    font-weight: 900;
+    padding: 3px;
+  }
+`
+export const ConHolders = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  
+  .product-imgcard{
+    height: 50vh;
+  }
+  .product-imgcard > img{
+    height: 100%;
+  }
+`
+export const CartCard = styled.div`
+ 
+  .cart-container{
+    border: 2px solid red;
+    width: 100%;
+    max-width: 800px;
+    margin: auto; 
+  }
+
+`
